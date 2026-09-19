@@ -1,0 +1,46 @@
+.devorbit-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-nav .nav-link {
+  color: #94a3b8;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
+.devorbit-btn {
+  color: white;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  transition: 0.25s ease;
+}
+
+.devorbit-btn:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}

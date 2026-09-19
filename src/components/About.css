@@ -1,0 +1,290 @@
+.about-section {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0;
+  background: #070b14;
+  color: #f8fafc;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* BACKGROUND */
+
+.about-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+.about-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -200px;
+  top: 100px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.12);
+  filter: blur(120px);
+}
+
+/* HEADER */
+
+.about-header {
+  margin-bottom: 80px;
+}
+
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #8b5cf6;
+}
+
+.about-line {
+  width: 35px;
+  height: 1px;
+  background: #8b5cf6;
+}
+
+.about-title {
+  max-width: 850px;
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  font-weight: 700;
+}
+
+.about-title span {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6,
+    #6366f1,
+    #38bdf8
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CONTENT */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.about-main {
+  max-width: 680px;
+}
+
+.about-lead {
+  margin: 0 0 28px;
+
+  font-size: 25px;
+  line-height: 1.5;
+  color: #f8fafc;
+}
+
+.about-text {
+  margin: 0 0 20px;
+
+  font-size: 16px;
+  line-height: 1.8;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 25px;
+  padding: 15px 22px;
+
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+
+  color: #f8fafc;
+  background: rgba(15, 23, 42, 0.7);
+
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+}
+
+.about-button strong {
+  color: #8b5cf6;
+  font-size: 18px;
+}
+
+.about-button:hover {
+  transform: translateY(-3px);
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* SIDE CARDS */
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 20px;
+
+  padding: 26px;
+
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(139, 92, 246, 0.5);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.about-card-number {
+  font-size: 12px;
+  color: #8b5cf6;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.about-card p {
+  margin: 0;
+
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* STATS */
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 100px;
+  padding-top: 45px;
+
+  border-top: 1px solid #1e293b;
+}
+
+.about-stat {
+  padding: 0 30px;
+  border-right: 1px solid #1e293b;
+}
+
+.about-stat:first-child {
+  padding-left: 0;
+}
+
+.about-stat:last-child {
+  border-right: none;
+}
+
+.about-stat strong {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #8b5cf6, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-stat span {
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+  .about-stat {
+    border-right: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 100px 0;
+  }
+
+  .about-header {
+    margin-bottom: 55px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .about-lead {
+    font-size: 20px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+  }
+
+  .about-stat strong {
+    font-size: 28px;
+  }
+}
