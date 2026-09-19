@@ -1,4 +1,4 @@
-import devorbitlogo from "../assets/devorbit_logo.png";
+import devorbitlogo from "../assets/Devorbit_logo.png";
 
 
 function Navbar() {
