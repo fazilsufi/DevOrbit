@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Kashmircraft from "./components/Kashmircraft";
 import About from "./components/About";
 import Pricing from "./components/Pricing";
-import Contact from "./components/Contact";
+import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
